@@ -111,3 +111,12 @@
 .contact-input {
   @apply border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 lg:mr-7 rounded-md mb-7
 }
+
+
+.hm-heading {
+  @apply font-semibold text-lg text-white bg-orange_primary w-fit px-2 
+}
+
+.update-cards{
+  @apply grid grid-cols-2 gap-x-6 md:grid-cols-3 lg:grid-cols-2 lg:gap-x-0.5
+}

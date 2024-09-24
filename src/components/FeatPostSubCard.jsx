@@ -1,19 +1,22 @@
 /* eslint-disable react/prop-types */
-function FeaturedPostCard(props) {
+function FeatPostClone(props) {
   return (
-    <div className="flex flex-wrap justify-center items-center">
+    <div className="flex flex-wrap">
       {props.author.map((item, index) => {
         return (
-          <div key={index} className="flex flex-col mx-16 lg:mx-2">
-            <h1 className="text-2xl font-bold">{item.title}</h1>
-            <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+          <div key={index} className="flex my-10 lg:mx-2 w-full">
+            <div className="w-60 h-40 mx-4">
+              {" "}
               <img
                 src={item.imgsrc}
                 alt="featured post"
-                className="w-full h-96 object-cover"
+                className="w-full h-full object-cover"
               />
+            </div>
+            <div className="flex flex-col h-20">
+              <h1 className="text-sm font-medium">{item.title}</h1>
               <div className="flex flex-col p-4">
-                <div className="flex items-center mt-2">
+                <div className="flex items-center mt-2 w-72">
                   <div className="flex items-center">
                     <img
                       src={item.authorImg}
@@ -34,4 +37,4 @@ function FeaturedPostCard(props) {
   );
 }
 
-export default FeaturedPostCard;
+export default FeatPostClone;

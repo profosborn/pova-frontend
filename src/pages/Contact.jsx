@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Footer from "../components/Footer";
 import Menubar from "../components/Menubar";
 import SocialIcons from "../components/SocialIcons";
@@ -48,18 +48,18 @@ function Contactpage() {
               <button className="contact-btn">Send message</button>
             </form>
           </div>
-          <div className="w-3/4 md:text-center">
-            <p className="mb-16 md:mb-10">
+          <div className="w-3/4 text-center lg:text-left md:flex md:flex-col ">
+            <p className="mb-8 md:mb-10">
               Dynamically underwhelm integrated outsourcing via timely models.
               Rapidiously reconceptualize visionary imperatives without.
             </p>
-            <div className="md:flex md:gap-20 md:justify-center">
+            <div className="text-center lg:text-left md:flex md:justify-center md:flex-col ">
               <div>
                 <p className="mb-3">info.@pova.com</p>
                 <p className="mb-3">+233000000000</p>
                 <p className="mb-9">Accra, Ghana</p>
               </div>
-              <div className="">
+              <div className="flex justify-center md:text-left">
                 <SocialIcons />
               </div>
             </div>

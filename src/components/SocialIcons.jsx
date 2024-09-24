@@ -1,20 +1,13 @@
 import {
-    AiFillFacebook,
-    AiFillInstagram,
-    AiFillPinterest,
-    AiFillTwitterCircle,
-    AiFillTwitterSquare,
-    AiOutlineFacebook,
-    AiOutlineInstagram,
-    AiOutlinePinterest,
-    AiOutlineTwitter,
-  } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
-import { RiFacebookBoxLine } from "react-icons/ri";
+  AiFillTwitterSquare,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlinePinterest,
+} from "react-icons/ai";
 
 function SocialIcons() {
   return (
-    <div>
+    <div className="">
       <div>
         <p>Follow on:</p>
       </div>
@@ -23,13 +16,13 @@ function SocialIcons() {
           <AiFillTwitterSquare />
         </div>
         <div className="social">
-          <AiOutlineFacebook/>
+          <AiOutlineFacebook />
         </div>
         <div className="social">
-          <AiOutlinePinterest/>
+          <AiOutlinePinterest />
         </div>
         <div className="social">
-          <AiOutlineInstagram/>
+          <AiOutlineInstagram />
         </div>
       </div>
     </div>

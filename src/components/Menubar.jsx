@@ -1,9 +1,8 @@
-import { AiFillEdit, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import Logo from "./Logo";
 import {
   RiArrowDropDownLine,
   RiCloseLine,
-  RiEyeCloseLine,
 } from "react-icons/ri";
 import { FaEdit } from "react-icons/fa";
 import MenuLogo from "../assets/images/menu_logo.png";
@@ -12,7 +11,7 @@ import { useState } from "react";
 function Menubar() {
   const [show, setShow] = useState("invisible");
   return (
-    <div className="md:flex bg-custom_blue p-6 h-24 lg:items-center">
+    <div className="md:flex bg-custom_blue p-6 h-24 lg:items-center lg:gap-20">
       <div className="flex justify-between">
         <div>
           <img src={MenuLogo} alt="" width={40} />
@@ -27,13 +26,13 @@ function Menubar() {
             <RiCloseLine onClick={() => setShow("invisible")} />
           </div>
           <div>
-            <a href="">Homepage</a>
+            <a href="/home">Homepage</a>
           </div>
           <div>
-            <a href="">About</a>
+            <a href="/about">About</a>
           </div>
           <div className="flex my-3 items-center">
-            <a href="">Categories</a>
+            <a href="/categories">Categories</a>
             <RiArrowDropDownLine />
           </div>
           <div className="flex items-center">

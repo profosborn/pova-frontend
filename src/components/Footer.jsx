@@ -1,11 +1,4 @@
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillPinterest,
-  AiFillTwitterCircle,
-  AiFillTwitterSquare,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+
 import Logo from "./Logo";
 import SocialIcons from "./SocialIcons";
 
