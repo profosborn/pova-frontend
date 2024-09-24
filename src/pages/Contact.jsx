@@ -59,7 +59,7 @@ function Contactpage() {
                 <p className="mb-3">+233000000000</p>
                 <p className="mb-9">Accra, Ghana</p>
               </div>
-              <div className="flex justify-center md:text-left">
+              <div className="flex justify-center md:justify-start md:text-left">
                 <SocialIcons />
               </div>
             </div>
