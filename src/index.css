@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  @apply absolute text-white w-full font-prime_font;
+}
+
+.hero {
+  @apply absolute top-48 left-52 flex flex-col justify-center items-center bg-cover bg-no-repeat h-32 text-white w-3/5 font-prime_font;
+}
+
+.tags {
+  @apply bg-gray-700 border-white px-4 py-3 rounded-lg border-2 bg-opacity-60 mx-4;
+}
+
+.featured-box {
+  @apply flex lg:h-80 absolute lg:top-96 left-32 shadow-md w-3/4 font-prime_font;
+}
+
+.f-left-box {
+  @apply w-2/4 h-full bg-gray-300;
+}
+
+.f-right-box {
+  @apply w-2/4 h-full bg-white p-4 rounded-r-md;
+}
+
+.f-heading {
+  @apply bg-cyan-100 text-blue-700 px-4 rounded-lg font-bold w-28 uppercase;
+}
+
+.general-footer {
+  @apply font-prime_font bg-custom_blue_sec py-20;
+}
+
+.l-footer {
+  @apply font-prime_font bg-l_footer py-20 text-gray-300;
+}
+
+.soc-media-link {
+  @apply m-4 bg-white px-4 py-2 rounded-md font-semibold;
+}
+
+.soc-media-link:hover {
+  @apply border-orange_primary border-2;
+}
+
+.catcard {
+  @apply bg-custom_blue w-64 h-40 flex flex-col items-center justify-center pt-5 rounded-md text-orange_primary;
+}
+
+.catcard p {
+  @apply text-black;
+}
+
+.catcard:hover {
+  @apply bg-orange_primary text-white;
+}
+
+.catcard:hover p {
+  @apply text-white;
+}
+
+.social:hover {
+  @apply text-orange_primary;
+}
+
+.subscribe-btn {
+  @apply bg-orange_primary text-white p-2 rounded-md lg:rounded-none lg:rounded-r lg:w-24 w-56 my-4 lg:my-1;
+}
+
+.show {
+  @apply left-0 top-0 mx-0 w-52 lg:invisible absolute bg-cyan-100 text-left h-fit px-4;
+}
+
+.read-more {
+  @apply overflow-hidden h-20 mb-8
+}
+
+.faq-heading {
+  @apply  mx-4 my-8 bg-orange_primary p-2 text-white text-xl  font-semibold text-center
+}
+
+/* hover:scale-150 */
+.faq-icon {
+  @apply bg-orange_primary w-3 h-0.5 rotate-90 translate-x-3
+}
+.faq-icon-b {
+  @apply bg-orange_primary w-3 h-0.5 rotate-180
+}
+.faq-icon-two {
+  @apply bg-orange_primary w-3 h-0.5
+}
+
+.faq-drop-show {
+  @apply bg-custom_blue_sec px-4
+}
+
+.subject-input {
+  @apply border-contact_input w-72 lg:w-full px-7 py-4 border-2 rounded-md
+}
+
+.contact-btn {
+  @apply bg-orange_primary w-80 lg:w-72 mt-4 text-white p-3 rounded-lg
+}
+
+
+.contact-input {
+  @apply border-contact_input py-2 px-7 w-72 md:py-4 md:px-8 border-2 lg:mr-7 rounded-md mb-7
+}
