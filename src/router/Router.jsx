@@ -9,6 +9,7 @@ import AboutAuthor from "../pages/AboutAuthor";
 import Contactpage from "../pages/Contact";
 import FAQPage from "../pages/FAQ";
 import Categories from "../pages/Categories";
+import BlogSingle from "../pages/BlogSingle";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/contact" element={<Contactpage/>}/>
         <Route path="/faq" element={<FAQPage/>}/>
         <Route path="/categories" element={<Categories/>}/>
+        <Route path="/blog/view" element={<BlogSingle/>}/>
       </Routes>
   );
 }

@@ -1,53 +1,39 @@
 import AuthorProfile from "../components/AuthorProfile";
 import FeatPostClone from "../components/FeatPostSubCard";
-import FeaturedPost from "../components/FeaturedPost";
-import FeaturedPostCard from "../components/FeaturedPostCard";
-import Footer from "../components/Footer";
-import Menubar from "../components/Menubar";
 
-function Home() {
-  const author = [
-    {
-      title: "Travel To America And Asia On the Spot",
-      imgsrc:
-        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
-      authorName: "John Doe",
-      dateOfArticles: "2021-09-01",
-      timeToRead: "5 min read",
-    },
-    {
-      title: "Travel To America And Asia On the Spot",
-      imgsrc:
-        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
-      authorName: "John Doe",
-      dateOfArticles: "2021-09-01",
-      timeToRead: "5 min read",
-    },
-    {
-      title: "Travel To America And Asia On the Spot",
-      imgsrc:
-        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
-      authorName: "John Doe",
-      dateOfArticles: "2021-09-01",
-      timeToRead: "5 min read",
-    },
-  ];
-  return (
-    <div className="font-prime_font">
-      <Menubar />
-      <div className="flex flex-col justify-center items-center py-10 lg:flex bg-custom_blue_sec">
-        <div className="flex flex-col lg:flex">
-          <FeaturedPostCard author={author} />
-        </div>
-        <div>
-          <FeaturedPost author={author} />
-        </div>
-      </div>
-      <div className="lg:flex">
-        <div className="flex flex-col w-2/3 h-72">
-          <FeatPostClone author={author} />
-        </div>
-        <div className="my-96 lg:my-9 ml-7">
+
+function Aside() {
+    const author = [
+        {
+          title: "Travel To America And Asia On the Spot",
+          imgsrc:
+            "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+          authorName: "John Doe",
+          dateOfArticles: "2021-09-01",
+          timeToRead: "5 min read",
+        },
+        {
+          title: "Travel To America And Asia On the Spot",
+          imgsrc:
+            "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+          authorName: "John Doe",
+          dateOfArticles: "2021-09-01",
+          timeToRead: "5 min read",
+        },
+        {
+          title: "Travel To America And Asia On the Spot",
+          imgsrc:
+            "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+          authorName: "John Doe",
+          dateOfArticles: "2021-09-01",
+          timeToRead: "5 min read",
+        },
+      ];
+
+
+    return ( 
+        <div className="lg:flex">
+        <div className="my-32 lg:my-9 ml-7">
           <div className="">
             <h1 className="hm-heading">Top Authors</h1>
             <div>
@@ -95,19 +81,19 @@ function Home() {
           <div className="mt-14 flex flex-col ">
             <p className="hm-heading">{"Today's Update"}</p>
             <div className="update-cards">
-              <div className="bg-custom_blue_sec text-orange_primary p-4 w-32 my-4 h-28 justify-center flex flex-col lg:mr-6">
+              <div className="update-card">
                 <p>14</p>
                 <p>New Posts</p>
               </div>
-              <div className="bg-custom_blue_sec text-orange_primary p-4 w-32 my-4 h-28 justify-center flex flex-col lg:mr-6">
+              <div className="update-card">
                 <p>480</p>
                 <p>Total Visitors</p>
               </div>
-              <div className="bg-custom_blue_sec text-orange_primary p-4 w-32 my-4 h-28 justify-center flex flex-col lg:mr-6">
+              <div className="update-card">
                 <p>29</p>
                 <p>New Subscribers</p>
               </div>
-              <div className="bg-custom_blue_sec text-orange_primary p-4 w-32 my-4 h-28 justify-center flex flex-col lg:mr-6">
+              <div className="update-card">
                 <p>138</p>
                 <p>Blog Read</p>
               </div>
@@ -171,11 +157,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="general-footer">
-        <Footer />
-      </div>
-    </div>
-  );
+     );
 }
 
-export default Home;
+export default Aside;

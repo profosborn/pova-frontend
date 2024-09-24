@@ -20,6 +20,9 @@ export default {
       },
       fontSize: {
         stnd: '2rem'
+      },
+      height:{
+        h100: '22rem'
       }
     },
   },
