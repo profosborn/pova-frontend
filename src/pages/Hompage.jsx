@@ -3,21 +3,37 @@ import Footer from "../components/Footer";
 import Menubar from "../components/Menubar";
 
 function Home() {
-    const author =[
-        {"title": "Travel", "authorName": "John Doe", "dateOfArticles": "2021-09-01", "timeToRead": "5 min read"},
-    ]
+  const author = [
+    {
+      title: "Travel To America And Asia On the Spot",
+      imgsrc:
+        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+      authorName: "John Doe",
+      dateOfArticles: "2021-09-01",
+      timeToRead: "5 min read",
+    },
+    {
+      title: "Travel To America And Asia On the Spot",
+      imgsrc:
+        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+      authorName: "John Doe",
+      dateOfArticles: "2021-09-01",
+      timeToRead: "5 min read",
+    },
+    {
+      title: "Travel To America And Asia On the Spot",
+      imgsrc:
+        "https://i.pinimg.com/236x/f1/13/df/f113df475d4566caa0075c6729960fa3.jpg",
+      authorName: "John Doe",
+      dateOfArticles: "2021-09-01",
+      timeToRead: "5 min read",
+    },
+  ];
   return (
     <div>
       <Menubar />
-      <div>
-        <FeaturedPostCard
-          title={author.title}
-          imgSrc={author.imgsrc}
-          authorImg={author.authorImg}
-          authorName={author.authorName}
-          dateOfArticles={author.dateOfArticles}
-          timeToRead={author.timeToRead}
-        />
+      <div className="my-10">
+        <FeaturedPostCard author={author} />
       </div>
       <div></div>
       <div></div>
