@@ -1,6 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import bgimage from "../assets/images/hero-bg.png";
-import Stats from '../components/Stats.jsx'
+import Stats from './Stats.jsx'
 function Hero() {
   return (
     <div className="">

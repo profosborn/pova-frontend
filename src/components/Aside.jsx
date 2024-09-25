@@ -1,5 +1,5 @@
-import AuthorProfile from "../components/AuthorProfile";
-import FeatPostClone from "../components/FeatPostSubCard";
+import AuthorProfile from "./AuthorProfile";
+import FeatPostClone from "./FeatPostSubCard";
 
 
 function Aside() {
